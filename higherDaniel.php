@@ -1,5 +1,4 @@
 <?php
-
 require_once 'getdeck.php';
 
 $baraja = getDeck();
@@ -34,7 +33,6 @@ $puntosJugador2 = 0;
 $enfrentamientos = [];
 
 for ($i = 0; $i < 10; $i++) {
-
     $carta1 = $jugador1[$i];
     $carta2 = $jugador2[$i];
 
@@ -99,117 +97,79 @@ if ($puntosJugador1 > $puntosJugador2) {
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Higher | Juegos de cartas</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
-
+    
 <body>
-
     <?php
         include $_SERVER['DOCUMENT_ROOT'] . '/includes/cabecera.php';
     ?>
 
     <main class="contenedor">
-
         <section class="presentacion">
-
             <p class="etiqueta">Juego de cartas</p>
-
             <h1>Higher</h1>
-
             <p class="descripcion">
                 Compara las cartas de los dos jugadores
                 y consigue la mayor puntuación.
             </p>
-
         </section>
 
         <section class="partida-higher">
-
             <h2>Enfrentamientos</h2>
-
             <?php foreach ($enfrentamientos as $i => $ronda): ?>
-
                 <div class="ronda-higher">
-
                     <h3>Enfrentamiento <?= $i + 1 ?></h3>
-
                     <div class="cartas-higher">
-
                         <div class="carta-higher">
-
                             <p>Jugador 1</p>
-
                             <img
                                 src="img/<?= htmlspecialchars($ronda['carta1']['image']) ?>"
                                 alt="Carta del jugador 1"
                             >
-
                             <p class="puntos-carta">
                                 Puntos: <?= $ronda['puntos1'] ?>
                             </p>
-
                         </div>
 
                         <div class="versus-higher">VS</div>
-
                         <div class="carta-higher">
-
                             <p>Jugador 2</p>
-
                             <img
                                 src="img/<?= htmlspecialchars($ronda['carta2']['image']) ?>"
                                 alt="Carta del jugador 2"
                             >
-
                             <p class="puntos-carta">
                                 Puntos: <?= $ronda['puntos2'] ?>
                             </p>
-
                         </div>
-
                     </div>
-
                     <p class="resultado-higher">
                         <?= htmlspecialchars($ronda['resultado']) ?>
                     </p>
-
                 </div>
-
             <?php endforeach; ?>
-
         </section>
 
         <section class="puntuacion-higher">
-
             <h2>Resultado final</h2>
-
             <p>
                 Jugador 1: <?= $puntosJugador1 ?> puntos
             </p>
-
             <p>
                 Jugador 2: <?= $puntosJugador2 ?> puntos
             </p>
-
             <h3><?= htmlspecialchars($ganador) ?></h3>
-
         </section>
-
     </main>
-
     <?php
         include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php';
     ?>
-
 </body>
 </html>
