@@ -1,6 +1,4 @@
-
 <?php
-
 function getDeck(): array
 {
     $deck = [];
