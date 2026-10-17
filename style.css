@@ -1,5 +1,9 @@
 
-/* ESTILOS GENERALES */
+/* =====================================
+   1. ESTILOS GENERALES
+===================================== */
+
+/* Configuración general */
 
 * {
     margin: 0;
@@ -25,7 +29,7 @@ a {
     margin: auto;
 }
 
-/* CABECERA */
+/* Cabecera */
 
 .cabecera {
     background-color: #091810;
@@ -52,6 +56,8 @@ a {
     color: #a8e6b9;
 }
 
+/* Navegación */
+
 nav {
     display: flex;
     gap: 20px;
@@ -65,7 +71,7 @@ nav a:hover {
     color: white;
 }
 
-/* PRESENTACIÓN */
+/* Presentación */
 
 .presentacion {
     text-align: center;
@@ -91,13 +97,13 @@ nav a:hover {
     font-size: 18px;
 }
 
-/* JUEGOS */
+/* Sección de juegos */
 
 .juegos {
     padding: 20px 0 60px;
 }
 
-.juegos h2 {
+.juegos > h2 {
     text-align: center;
     margin-bottom: 25px;
     font-size: 28px;
@@ -151,7 +157,7 @@ nav a:hover {
     margin-top: auto;
 }
 
-/* AUTOR */
+/* Sección del autor */
 
 .autor {
     display: flex;
@@ -185,7 +191,7 @@ nav a:hover {
     color: #cccccc;
 }
 
-/* PIE DE PÁGINA */
+/* Pie de página */
 
 .pie {
     text-align: center;
@@ -193,4 +199,160 @@ nav a:hover {
     background-color: #091810;
     color: #cccccc;
     border-top: 1px solid #294737;
+}
+
+/* Accesibilidad */
+
+a:focus-visible {
+    outline: 2px solid #a8e6b9;
+    outline-offset: 4px;
+}
+
+
+/* =====================================
+   2. ESTILOS DE HIGHER
+===================================== */
+
+.partida-higher {
+    margin-bottom: 40px;
+}
+
+.partida-higher > h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.ronda-higher {
+    background-color: #1b3b2c;
+    border: 1px solid #315642;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ronda-higher h3 {
+    margin-bottom: 20px;
+}
+
+.cartas-higher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 20px;
+}
+
+.carta-higher {
+    flex: 1;
+}
+
+.carta-higher img {
+    display: block;
+    width: 100px;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto 0;
+}
+
+.versus-higher {
+    font-size: 20px;
+    font-weight: bold;
+    color: #a8e6b9;
+}
+
+.puntos-carta {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #a8e6b9;
+}
+
+.resultado-higher {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Puntuación final de Higher */
+
+.puntuacion-higher {
+    background-color: #172f23;
+    border: 1px solid #294737;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.puntuacion-higher h2 {
+    margin-bottom: 20px;
+}
+
+.puntuacion-higher p {
+    margin-bottom: 10px;
+}
+
+.puntuacion-higher h3 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #a8e6b9;
+}
+
+
+/* =====================================
+   3. ESTILOS DE BLACKJACK
+===================================== */
+
+/* Manos de los participantes */
+
+.mano-blackjack {
+    margin-bottom: 25px;
+}
+
+.mano-blackjack h3 {
+    margin-bottom: 15px;
+}
+
+/* Imágenes de las cartas */
+
+.cartas-blackjack {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.cartas-blackjack img {
+    display: block;
+    width: 80px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Resultado de cada jugador */
+
+.resultado-blackjack {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #a8e6b9;
+}
+
+/* Nueva partida */
+
+.nueva-partida-blackjack {
+    text-align: center;
+    margin: 30px 0 50px;
+}
+
+.boton-blackjack {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 6px;
+    background-color: #286343;
+    color: white;
+    font-weight: bold;
+}
+
+.boton-blackjack:hover {
+    background-color: #347c53;
 }

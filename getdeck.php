@@ -11,7 +11,7 @@ function getDeck(): array
         for ($numero = 1; $numero <= 13; $numero++) {
             if ($numero == 1) {
                 $valor = 'A';
-                $imagen = 'a';
+                $imagen = '1';
             } elseif ($numero >= 2 && $numero <= 10) {
                 $valor = $numero;
                 $imagen = $numero;
@@ -39,13 +39,13 @@ function getDeck(): array
     $deck[] = [
         'suit' => 'comodines',
         'value' => 'JOKER',
-        'image' => 'joker_1.png'
+        'image' => 'jok_1.png'
     ];
 
     $deck[] = [
         'suit' => 'comodines',
         'value' => 'JOKER',
-        'image' => 'joker_2.png'
+        'image' => 'jok_2.png'
     ];
 
     return $deck;

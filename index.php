@@ -13,21 +13,9 @@
 
 <body>
 
-    <header class="cabecera">
-        <div class="contenedor navegacion">
-
-            <a href="index.php" class="logo">
-                <span class="simbolo-logo" aria-hidden="true">♠</span>
-                Juegos de cartas
-            </a>
-
-            <nav aria-label="Navegación principal">
-                <a href="higherDaniel.php">Higher</a>
-                <a href="blackjackDaniel.php">Blackjack</a>
-            </nav>
-
-        </div>
-    </header>
+    <?php
+    include $_SERVER['DOCUMENT_ROOT'] . '/includes/cabecera.php';
+    ?>
 
     <main class="contenedor">
 
@@ -102,14 +90,9 @@
 
     </main>
 
-    <footer class="pie">
-
-        <p>
-            &copy; <?= date('Y') ?> Daniel.
-            Aplicación desarrollada con PHP.
-        </p>
-
-    </footer>
+    <?php
+    include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php';
+    ?>
 
 </body>
 
