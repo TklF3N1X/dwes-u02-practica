@@ -1,24 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Juegos de cartas | Daniel</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <?php
     include $_SERVER['DOCUMENT_ROOT'] . '/includes/cabecera.php';
     ?>
 
     <main class="contenedor">
-
         <section class="presentacion">
             <p class="etiqueta">Proyecto PHP</p>
 
@@ -31,69 +26,46 @@
         </section>
 
         <section class="juegos">
-
             <h2>Elige tu juego</h2>
-
             <div class="rejilla-juegos">
-
                 <a href="higherDaniel.php" class="tarjeta-juego">
-
                     <div class="simbolos" aria-hidden="true">♠ ♥</div>
-
                     <h3>Higher</h3>
-
                     <p>
                         Enfrenta tus cartas con las de otro jugador
                         y consigue la mayor puntuación.
                     </p>
-
                     <span class="enlace-juego">
                         Jugar ahora →
                     </span>
-
                 </a>
 
                 <a href="blackjackDaniel.php" class="tarjeta-juego">
-
                     <div class="simbolos" aria-hidden="true">♦ ♣</div>
-
                     <h3>Blackjack</h3>
-
                     <p>
                         Intenta alcanzar la mejor puntuación
                         sin superar los 21 puntos.
                     </p>
-
                     <span class="enlace-juego">
                         Jugar ahora →
                     </span>
-
                 </a>
-
             </div>
-
         </section>
 
         <section class="autor">
-
             <div class="avatar" aria-hidden="true">D</div>
-
             <div>
                 <h2>Desarrollado por Daniel</h2>
-
                 <p>
                     Práctica de Desarrollo Web en Entorno Servidor.
                 </p>
             </div>
-
         </section>
-
     </main>
-
     <?php
     include $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php';
     ?>
-
 </body>
-
 </html>
